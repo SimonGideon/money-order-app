@@ -36,6 +36,8 @@ gem 'pg_search'
 # add cancancan
 gem 'cancancan'
 
+# letter opener
+gem 'letter_opener', '~> 1.4', '>= 1.4.1'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"

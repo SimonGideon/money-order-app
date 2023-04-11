@@ -30,6 +30,9 @@ gem "jbuilder"
 # add devise
 gem 'devise'
 
+# gem serch
+gem 'pg_search'
+
 # add cancancan
 gem 'cancancan'
 
@@ -76,4 +79,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  # rspec
+  gem 'rspec-rails'
 end

@@ -1,15 +1,13 @@
 class GroupsController < ApplicationController
   load_and_authorize_resource
-  
+
   # display default cartegory
   def index
     @groups = Group.all
-    
   end
 
   # display a specific group
-  def show
-  end
+  def show; end
 
   # display the form to create a new group
   def new
@@ -17,14 +15,13 @@ class GroupsController < ApplicationController
   end
 
   # display the form to edit an existing group
-  def edit
-  end
+  def edit; end
 
   # create a new group
   def create
     @group = Group.new(group_params)
     @group.user = current_user
-  
+
     if @group.save
       redirect_to @group
     else

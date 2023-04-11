@@ -30,6 +30,9 @@ gem "jbuilder"
 # add devise
 gem 'devise'
 
+# linters
+gem 'rubocop', '>= 1.0', '< 2.0'
+
 # gem serch
 gem 'pg_search'
 

@@ -1,1 +1,6 @@
 <h1>Hello</h1>
+<h1><%= @group.name %></h1>
+<%= image_tag @group.icon_attachment %>
+<% @money_order .each do |order| %>
+<% end %>
+<%= link_to 'New Group', new_group_money_order_path %>

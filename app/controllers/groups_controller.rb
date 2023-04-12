@@ -4,7 +4,6 @@ class GroupsController < ApplicationController
   # display default cartegory
   def index
     @groups = Group.all
-    
   end
 
   # display a specific group
@@ -22,14 +21,13 @@ class GroupsController < ApplicationController
   def create
     @group = current_user.groups.build(group_params)
     @group.process_icon_data
-    
+
     if @group.save
       redirect_to @group, notice: 'Group was successfully created.'
     else
       render :new
     end
   end
-  
 
   # update an existing group
   def update
@@ -47,8 +45,8 @@ class GroupsController < ApplicationController
   end
 
   private
+
   def group_params
     params.require(:group).permit(:name, :icon_data, :user_id).merge(user: current_user)
   end
-  
 end

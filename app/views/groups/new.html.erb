@@ -1,8 +1,10 @@
-<h1>Add a New Group</h1>
+<h1>New Group</h1>
+
 <%= form_with(model: @group, local: true) do |form| %>
   <% if @group.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@group.errors.count, "error") %> prohibited this group from being saved:</h2>
+
       <ul>
       <% @group.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -13,10 +15,15 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name, id: :group_name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :icon %>
+    <%= form.file_field :icon_data %>
   </div>
 
   <div class="actions">
-    <%= form.submit "Create Group" %>
+    <%= form.submit %>
   </div>
 <% end %>

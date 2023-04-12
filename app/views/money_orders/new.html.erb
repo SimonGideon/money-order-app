@@ -12,12 +12,12 @@
 
   <div class="field">
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, required: true %>
   </div>
 
   <div class="field">
     <%= f.label :amount %>
-    <%= f.text_field :amount %>
+    <%= f.text_field :amount, required: true %>
   </div>
 
   <%= f.hidden_field :author_id, value: current_user.id %>

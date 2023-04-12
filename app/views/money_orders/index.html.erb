@@ -2,5 +2,10 @@
 <h1><%= @group.name %></h1>
 <%= image_tag @group.icon_attachment %>
 <% @money_order .each do |order| %>
+<div>
+<%= order.id%>
+<%= order.created_at%>
+</div>
 <% end %>
-<%= link_to 'New Group', new_group_money_order_path %>
+<%= number_to_currency(@group.money_orders.sum(:amount)) %>
+<%= link_to 'TRANSACT', new_group_money_order_path %>

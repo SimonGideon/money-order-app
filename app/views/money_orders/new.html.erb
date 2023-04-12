@@ -1,0 +1,28 @@
+<%= form_with model: [@group, @money_order], local: true do |f| %>
+  <% if @money_order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@money_order.errors.count, "error") %> prohibited this money order from being saved:</h2>
+      <ul>
+      <% @money_order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :amount %>
+    <%= f.text_field :amount %>
+  </div>
+
+  <%= f.hidden_field :author_id, value: current_user.id %>
+
+  <div class="actions">
+    <%= f.submit "Create Money Order" %>
+  </div>
+<% end %>

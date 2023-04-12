@@ -4,6 +4,7 @@ class GroupsController < ApplicationController
   # display default cartegory
   def index
     @groups = Group.all
+    
   end
 
   # display a specific group

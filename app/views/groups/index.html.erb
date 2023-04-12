@@ -1,1 +1,11 @@
-<h1>Index</h2>
+<h1>Groups</h1>
+    <% @groups.each do |group| %>
+    <%= link_to group_money_orders_path(group) do %>
+    <div class="group-container">
+        <%= group.name %>
+        <%= image_tag group.icon_attachment %>
+        <%= number_to_currency(group.money_orders.sum(:amount)) %>
+    </div>
+    <% end %>
+    <% end %>
+<%= link_to 'New Group', new_group_path %>

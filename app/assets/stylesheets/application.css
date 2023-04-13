@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3778c2;
+    color: white;
+    padding: 1.3rem 1rem;
+}
+
+.hero>*{
+    width: 50%;
+    align-items: self-start;
+}
+
+.nav-icon {
+    width: 20%;
+}
+
+input:focus {
+    outline: none;
+  }
+  

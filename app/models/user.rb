@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  validates :name, presence: true, length: { maximum: 70 }
   has_many :groups
   has_many :money_orders
   # Include default devise modules. Others available are:

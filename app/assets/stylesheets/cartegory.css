@@ -1,0 +1,48 @@
+.group-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 0 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.group-container:first-child {
+    margin-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.name-time {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color:  #434b54;
+    align-self: flex-baseline;
+}
+
+.currency {
+    justify-self: right;
+    font-weight: 600;
+}
+
+.date {
+    font-size: 0.7rem;
+}
+
+.nav-icon {
+    color: #ffff;
+}

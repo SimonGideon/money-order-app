@@ -1,10 +1,29 @@
-<h1>Groups</h1>
+<%= stylesheet_link_tag 'cartegory' %>
+
+<div class="hero">
+  <%= link_to root_path do %>
+    <%= image_tag "menu.svg", class: "nav-icon" %>
+  <% end %>
+  <h3>GROUPS</h3>
+  <div class="circle"></div>
+</div>
     <% @groups.each do |group| %>
     <%= link_to group_money_orders_path(group) do %>
     <div class="group-container">
-        <%= group.name %>
-        <%= image_tag group.icon_attachment %>
-        <%= number_to_currency(group.money_orders.sum(:amount)) %>
+        <div class="row">
+            <%= image_tag group.icon_attachment , class: "icon"%>
+        </div>
+        <div class="name-time">
+            <span>
+            <%= group.name %>
+            </span>
+            <span class="date">
+            <%= group.created_at.strftime('%d %b %Y') %>
+            </span>
+        </div>
+        <div class="currency">
+            <%= number_to_currency(group.money_orders.sum(:amount)) %>
+        </div>
     </div>
     <% end %>
     <% end %>

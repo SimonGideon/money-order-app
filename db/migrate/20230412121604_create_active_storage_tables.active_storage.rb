@@ -3,7 +3,8 @@ class CreateActiveStorageTables < ActiveRecord::Migration[5.2]
   def change
     # Use Active Record's configured type for primary and foreign keys
     primary_key_type, foreign_key_type = primary_and_foreign_key_types
-
+    
+    drop_table :active_storage_blobs, if_exists: true
     create_table :active_storage_blobs, id: primary_key_type do |t|
       t.string   :key,          null: false
       t.string   :filename,     null: false
@@ -22,6 +23,7 @@ class CreateActiveStorageTables < ActiveRecord::Migration[5.2]
       t.index [ :key ], unique: true
     end
 
+    drop_table :active_storage_attachments, if_exists: true
     create_table :active_storage_attachments, id: primary_key_type do |t|
       t.string     :name,     null: false
       t.references :record,   null: false, polymorphic: true, index: false, type: foreign_key_type
@@ -37,6 +39,7 @@ class CreateActiveStorageTables < ActiveRecord::Migration[5.2]
       t.foreign_key :active_storage_blobs, column: :blob_id
     end
 
+    drop_table :active_storage_variant_records, if_exists: true
     create_table :active_storage_variant_records, id: primary_key_type do |t|
       t.belongs_to :blob, null: false, index: false, type: foreign_key_type
       t.string :variation_digest, null: false

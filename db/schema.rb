@@ -52,7 +52,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_12_172340) do
     t.index ["user_id"], name: "index_groups_on_user_id"
   end
 
-  create_table "money_orders", id: :string, default: -> { "('TRSC'::text || nextval('money_orders_id_seq'::regclass))" }, force: :cascade do |t|
+  create_table "money_orders", id: :string, default: -> { "('TRSC00AD'::text || nextval('money_orders_id_seq'::regclass))" }, force: :cascade do |t|
     t.string "name"
     t.bigint "author_id", null: false
     t.float "amount"

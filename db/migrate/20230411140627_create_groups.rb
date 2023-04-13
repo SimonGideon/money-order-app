@@ -1,5 +1,7 @@
 class CreateGroups < ActiveRecord::Migration[7.0]
   def change
+    drop_table :groups if table_exists?(:groups)
+    
     create_table :groups do |t|
       t.string :name
       t.string :description

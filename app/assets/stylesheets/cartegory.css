@@ -1,6 +1,8 @@
 .group-container {
+    background-color: #ffff;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;;
+    grid-template-columns: 1fr 2fr 1fr;
+    ;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
@@ -15,11 +17,19 @@
     margin-top: 1rem;
 }
 
+.sum {
+    display: flex;
+    background-color: #ffff;
+    justify-content: space-between;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 10px 15px;
+    color: #434b54;
+}
+
 a {
     text-decoration: none;
     color: #000;
 }
-
 
 .icon {
     width: 4rem;
@@ -30,7 +40,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    color:  #434b54;
+    color: #434b54;
     align-self: flex-baseline;
 }
 
@@ -43,6 +53,128 @@ a {
     font-size: 0.7rem;
 }
 
-.nav-icon {
-    color: #ffff;
+body {
+    background-color: #f5f5f5;
 }
+
+.new {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5fb523;
+    text-align: center;
+    padding: 25px 20px;
+    z-index: 9999;
+}
+
+.new-btn {
+    text-transform: uppercase;
+    color: #ffff;
+    padding: 10px 20%;
+    border: 1px solid #ffff;
+    width: 100%;
+}
+
+/* new cartegory */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  #error_explanation {
+    color: red;
+    margin-bottom: 20px;
+  }
+  
+  .field {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="file"] {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .actions {
+    margin-top: 20px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .hero {
+    padding-bottom: 10px;
+  }
+  
+    
+  .trans-head {
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    gap: 2px;
+  }
+
+ .s {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 0px;
+    font-size: 0.7rem;
+  }
+
+  .s>* {
+    padding: 0;
+    height: fit-content;
+  }
+
+  .trans-head h3 {
+    font-size: 24px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    margin-top: 1rem;
+  }
+
+  input {
+    font-size: 1rem;
+    border: none;
+  }
+
+  textarea, input:focus {
+    outline: none;
+  }
+
+  textarea {
+    height: 2rem;
+  }
+
+  

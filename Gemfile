@@ -33,6 +33,7 @@ gem 'devise'
 # linters
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+gem 'erb-formatter'
 # gem serch
 gem 'pg_search'
 

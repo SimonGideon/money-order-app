@@ -1,13 +1,12 @@
 class GroupsController < ApplicationController
   load_and_authorize_resource
+  include ActionView::Helpers::NumberHelper
 
   # display default cartegory
   def index
     @groups = Group.all
+    @money_oders_sum = number_to_currency(MoneyOrder.all.sum(:amount))
   end
-
-  # display a specific group
-  def show; end
 
   # display the form to create a new group
   def new
@@ -23,7 +22,7 @@ class GroupsController < ApplicationController
     @group.process_icon_data
 
     if @group.save
-      redirect_to @group, notice: 'Group was successfully created.'
+      redirect_to groups_path, notice: 'Group was successfully created.'
     else
       render :new
     end

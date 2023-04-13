@@ -1,6 +1,15 @@
-<h1>New Group</h1>
-
-<%= form_with(model: @group, local: true) do |form| %>
+<%= stylesheet_link_tag 'cartegory' %>
+<div class="hero">
+  <%= link_to root_path do %>
+    <%= image_tag "menu.svg", class: "nav-icon" %>
+  <% end %>
+  <div class="trans-head">
+    <h3>Cartegory</h3>
+  </div>
+  <div class="circle"></div>
+</div>
+<div class="form">
+  <%= form_with(model: @group, local: true) do |form| %>
   <% if @group.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@group.errors.count, "error") %> prohibited this group from being saved:</h2>
@@ -19,11 +28,10 @@
   </div>
 <div class="field">
   <%= form.label :description %>
-  <%= form.text_area_field :description, required: true %>
+  <%= form.text_area :description, required: true %>
 </div>
 
   <div class="field">
-    <%= form.label :icon %>
     <%= form.file_field :icon_data %>
   </div>
 
@@ -31,3 +39,5 @@
     <%= form.submit %>
   </div>
 <% end %>
+
+</div>

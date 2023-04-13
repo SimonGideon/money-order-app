@@ -1,30 +1,41 @@
-<%= stylesheet_link_tag 'cartegory' %>
-
+<%= stylesheet_link_tag "cartegory" %>
 <div class="hero">
   <%= link_to root_path do %>
     <%= image_tag "menu.svg", class: "nav-icon" %>
   <% end %>
-  <h3>GROUPS</h3>
+  <div class="trans-head">
+    <h3>TRANSACTION</h3>
+    <div class="s">
+      <p>Most recent</p>
+      <p>.</p>
+    </div>
+  </div>
   <div class="circle"></div>
 </div>
-    <% @groups.each do |group| %>
-    <%= link_to group_money_orders_path(group) do %>
+<div class="sum">
+  <p>Credit Card</p>
+  <%= @money_oders_sum %>
+</div>
+<% @groups.each do |group| %>
+  <%= link_to group_money_orders_path(group) do %>
     <div class="group-container">
-        <div class="row">
-            <%= image_tag group.icon_attachment , class: "icon"%>
-        </div>
-        <div class="name-time">
-            <span>
-            <%= group.name %>
-            </span>
-            <span class="date">
-            <%= group.created_at.strftime('%d %b %Y') %>
-            </span>
-        </div>
-        <div class="currency">
-            <%= number_to_currency(group.money_orders.sum(:amount)) %>
-        </div>
+      <div class="row">
+        <%= image_tag group.icon_attachment, class: "icon" %>
+      </div>
+      <div class="name-time">
+        <span>
+          <%= group.name %>
+        </span>
+        <span class="date">
+          <%= group.created_at.strftime("%d %b %Y") %>
+        </span>
+      </div>
+      <div class="currency">
+        <%= number_to_currency(group.money_orders.sum(:amount)) %>
+      </div>
     </div>
-    <% end %>
-    <% end %>
-<%= link_to 'New Group', new_group_path %>
+  <% end %>
+<% end %>
+<div class="new">
+  <%= link_to "New Group", new_group_path, class: "new-btn" %>
+</div>

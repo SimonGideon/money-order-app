@@ -63,7 +63,7 @@ body {
   font-weight: bolder;
 }
 
-.formItems{
+.formItems {
   display: flex;
   flex-direction: column;
   gap: 20px;

@@ -3,7 +3,7 @@ class MoneyOrdersController < ApplicationController
 
   # default display all the existing money orders
   def index
-    @money_order = MoneyOrder.includes(:group).where(group_id: params[:group_id])
+    @money_order = MoneyOrder.where(group_id: params[:group_id]).order(created_at: :desc)
     @group = Group.find(params[:group_id])
   end
 

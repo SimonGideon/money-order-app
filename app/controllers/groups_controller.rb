@@ -4,7 +4,7 @@ class GroupsController < ApplicationController
 
   # display default cartegory
   def index
-    @groups = Group.all
+    @groups = Group.includes(:money_orders).all
     @money_oders_sum = number_to_currency(MoneyOrder.all.sum(:amount))
   end
 

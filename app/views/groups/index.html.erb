@@ -10,7 +10,11 @@
       <p>.</p>
     </div>
   </div>
-  <div class="circle"></div>
+  <div class="circle">
+    <%= button_to destroy_user_session_path, :method => :delete do %>
+      <i class="fas fa-sign-out-alt"></i>
+    <% end %>
+  </div>
 </div>
 <div class="sum">
   <p>Credit Card</p>

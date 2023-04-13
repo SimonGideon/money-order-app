@@ -173,3 +173,9 @@ input:focus {
 textarea {
   height: 2rem;
 }
+
+i.fas.fa-sign-out-alt {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #333; /* Change this to the desired color */
+}

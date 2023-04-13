@@ -1,28 +1,43 @@
-<%= form_with model: [@group, @money_order], local: true do |f| %>
-  <% if @money_order.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@money_order.errors.count, "error") %> prohibited this money order from being saved:</h2>
-      <ul>
-      <% @money_order.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
+<%= stylesheet_link_tag "money_order" %>
+
+<div class="hero">
+  <%= link_to groups_path do %>
+    <%= image_tag "arrow.png", class: "nav-icon" %>
   <% end %>
-
+  <div class="trans-head">
+    <h4>New</h4>
+  </div>
+  <div class="circle"></div>
+</div>
+<div class="container">
+  <%= form_with model: [@group, @money_order], local: true do |f| %>
+    <% if @money_order.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@money_order.errors.count, "error") %>
+          prohibited this money order from being saved:</h2>
+        <ul>
+          <% @money_order.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+<div class="formItems">
   <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name, required: true %>
-  </div>
+      <%= f.label :name %>
+      <%= f.text_field :name, required: true %>
+    </div>
 
-  <div class="field">
-    <%= f.label :amount %>
-    <%= f.text_field :amount, required: true %>
-  </div>
+    <div class="field">
+      <%= f.label :amount %>
+      <%= f.text_field :amount, required: true %>
+    </div>
 
-  <%= f.hidden_field :author_id, value: current_user.id %>
+    <%= f.hidden_field :author_id, value: current_user.id %>
 
-  <div class="actions">
-    <%= f.submit "Create Money Order" %>
-  </div>
-<% end %>
+    <div class="actions">
+      <%= f.submit "Create Transaction" %>
+    </div>
+      <% end %>
+</div>
+</div>

@@ -40,7 +40,6 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 > This project was built with the following technologies
-
 <details>
   <summary>Client</summary>
   <ul>
@@ -74,8 +73,9 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO
+<!-- LIVE 
 
+### [Demo Video](https://youtu.be/001trgndMac)
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > Add a link to your deployed project.

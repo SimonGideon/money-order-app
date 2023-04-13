@@ -14,9 +14,6 @@ class MoneyOrdersController < ApplicationController
     @money_order.author_id = current_user.id
   end
 
-  # display the final page after the money order is created
-  def show; end
-
   # create a new money order
   def create
     @group = Group.find(params[:group_id])

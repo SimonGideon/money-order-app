@@ -14,7 +14,7 @@
 .form-group input {
   padding: 0.7rem;
   border: none;
-  border-bottom: 1px solid #969696;
+  border-bottom: 1px solid #d6d3d3;
 }
 
 .close {
@@ -39,7 +39,5 @@ a {
 }
 
 .btn {
-  background-color: #5fb523;
-  text-transform: uppercase;
-  color: white;
+  color: #ffffff;
 }

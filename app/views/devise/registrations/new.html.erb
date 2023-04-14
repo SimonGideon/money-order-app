@@ -3,8 +3,12 @@
   <%= link_to root_path do %>
     <%= image_tag "arrow.png", class: "nav-icon" %>
   <% end %>
-  <h3>SIGN UP</h3>
-  <div class="circle"></div>
+  <h3>Register</h3>
+  <div class="circle">
+    <%= link_to new_registration_path(resource_name), class: "btn btn-primary" do %>
+      Next
+    <% end %>
+  </div>
 </div>
 
 <div class="close">
@@ -13,7 +17,7 @@
     <%= image_tag "avatar.jpg", class: "avatar" %>
 
     <div class="form-group">
-      <%= f.text_field :name, placeholder: "Your name", class: "form-control" %>
+      <%= f.text_field :name, placeholder: "Full name", class: "form-control" %>
     </div>
 
     <div class="form-group">
@@ -26,8 +30,6 @@
 
     <div class="form-group">
       <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %>
-          characters minimum)</em>
       <% end %><br/>
       <%= f.password_field :password,
                        autocomplete: "new-password",
@@ -41,11 +43,5 @@
                        placeholder: "Confirm Password",
                        class: "form-control" %>
     </div>
-
-    <div class="form-group">
-      <%= f.submit "Sign up", class: "btn btn-primary" %>
-    </div>
   <% end %>
-
-  <%= render "devise/shared/links" %>
 </div>

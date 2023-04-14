@@ -1,0 +1,50 @@
+.avatar {
+  border-radius: 50%;
+  width: 20%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  padding: 0;
+  color: #969696;
+}
+
+.form-group input {
+  padding: 0.7rem;
+  border: none;
+  border-bottom: 1px solid #d6d3d3;
+}
+
+.close {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+}
+
+em {
+  font-size: 0.8rem;
+}
+
+.log-in,
+.forgot-password,
+.unlock_instr {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #969696;
+}
+
+.btn {
+  color: #fff;
+}
+
+.circle input {
+  background-color: transparent;
+  border: none;
+  color: #ffff;
+  font-size: 1rem;
+}

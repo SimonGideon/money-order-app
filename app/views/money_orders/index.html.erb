@@ -1,0 +1,35 @@
+<%= stylesheet_link_tag "money_order" %>
+
+<div class="hero">
+  <%= link_to groups_path do %>
+    <%= image_tag "arrow.png", class: "nav-icon" %>
+  <% end %>
+  <div class="trans-head">
+    <h3>Details</h3>
+  </div>
+  <div class="circle"></div>
+</div>
+<div class="container">
+  <div>
+    <div class="name-ico">
+      <%= image_tag @group.icon_attachment %>
+      <p><%= @group.name %></p>
+    </div>
+    <%= content_tag :div, @group.description, class: "description" %>
+  </div>
+  <div class="transact-item">
+    <% if @money_order.empty? %>
+      <p>No transactions yet.</p>
+    <% else %>
+      <% @money_order.each do |order| %>
+        <%= content_tag :p, order.id, class: "transaction-id" %>
+        <%= content_tag :p, order.created_at.strftime("%d %b %Y %I:%M %p"), class: "time" %>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="pay">
+    <p>TOTAL PAYMENT</p>
+    <%= number_to_currency(@group.money_orders.sum(:amount)) %>
+  </div>
+<%= link_to "TRANSACT", new_group_money_order_path, class: "transact-link" %>
+</div>

@@ -1,0 +1,46 @@
+<%= stylesheet_link_tag "cartegory" %>
+<div class="hero">
+  <%= link_to root_path do %>
+    <%= image_tag "menu.png", class: "nav-icon" %>
+  <% end %>
+  <div class="trans-head">
+    <h3>TRANSACTIONS</h3>
+    <div class="s">
+      <p>Most recent</p>
+      <p>.</p>
+    </div>
+  </div>
+  <div class="circle">
+    <%= button_to destroy_user_session_path, :method => :delete do %>
+      <i class="fas fa-sign-out-alt"></i>
+    <% end %>
+  </div>
+</div>
+<div class="sum">
+  <p>Credit Card</p>
+  <%= @money_oders_sum %>
+</div>
+<% @groups.each do |group| %>
+  <%= link_to group_money_orders_path(group) do %>
+    <div class="group-container">
+      <% if group.icon_attachment.present? %>
+        <%= image_tag group.icon_attachment, class: "icon" %>
+      <% end %>
+
+      <div class="name-time">
+        <span>
+          <%= group.name %>
+        </span>
+        <span class="date">
+          <%= group.created_at.strftime("%d %b %Y") %>
+        </span>
+      </div>
+      <div class="currency">
+        <%= number_to_currency(group.money_orders.sum(:amount)) %>
+      </div>
+    </div>
+  <% end %>
+<% end %>
+<div class="new">
+  <%= link_to "NEW CARTEGORY", new_group_path, class: "new-btn" %>
+</div>

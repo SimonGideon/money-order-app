@@ -1,0 +1,34 @@
+<%= stylesheet_link_tag "log_in" %>
+<div class="hero">
+  <%= link_to landing_pages_path do %>
+    <%= image_tag "arrow.png", class: "nav-icon" %>
+  <% end %>
+  <div>
+    <h3>LOGIN</h3>
+  </div>
+  <div class="circle">
+    <input type="submit" value="Next" form="new_user">
+  </div>
+</div>
+<div class="container">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="filed-holder">
+      <div class="field">
+        <%= f.email_field :email,
+                      autofocus: true,
+                      autocomplete: "email",
+                      placeholder: "Email" %>
+      </div>
+
+      <div class="field code">
+        <%= f.password_field :password,
+                         autocomplete: "current-password",
+                         placeholder: "Password" %>
+      </div>
+    </div>
+    <!-- Remove the Log in button -->
+  <% end %>
+</div>
+<div class="links">
+  <%= render "devise/shared/links" %>
+</div>

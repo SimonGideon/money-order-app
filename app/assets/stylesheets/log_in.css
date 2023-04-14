@@ -1,0 +1,76 @@
+body {
+  background-color: #f0ecec;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: #ffff;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0, rgba(27, 31, 35, 0.15) 0 0 0 1px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filed-holder {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.unlock_instr,
+.didnt-recieve,
+.sign_up {
+  display: none;
+}
+
+input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: #969696;
+}
+
+.forgot-password {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: right;
+  color: #fff;
+}
+
+.code {
+  border-top: 1px solid #dbd8d8;
+  padding-top: 7px;
+  margin-top: 7px;
+}
+
+.links {
+  text-align: center;
+}
+
+.circle input {
+  background-color: transparent;
+  border: none;
+  color: #ffff;
+  font-size: 1rem;
+}

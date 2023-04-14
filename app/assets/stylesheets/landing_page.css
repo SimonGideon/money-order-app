@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'majesty';
+  src: url('majesty.ttf');
+}
+
+.landing-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 95vh;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95%;
+  width: 100%;
+  text-align: center;
+  font-family: 'majesty', sans-serif;
+  font-size: 1.7rem;
+  color: #434b54;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 1.3rem;
+}
+
+.buttons > * {
+  display: flex;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.log-in {
+  background: #3778c2;
+  color: #fff;
+}
+
+.sign-up {
+  color: #969696;
+}
+
+.sign-up:hover {
+  border: 2px solid #969696;
+}
+
+.buttons a {
+  text-decoration: none;
+}

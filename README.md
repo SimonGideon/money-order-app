@@ -40,7 +40,6 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 > This project was built with the following technologies
-
 <details>
   <summary>Client</summary>
   <ul>
@@ -74,13 +73,17 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO
+
+
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
+1. ### [Demo Video](https://youtu.be/001trgndMac)
+2. ### [Live](https://money-order-app.onrender.com)
+<!-- LIVE 
 > Add a link to your deployed project.
 
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
+-[Live view](https://money-order-app.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
@@ -189,7 +192,7 @@ If you like this project feel free to star the projecta and request improve ment
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank me for beign focus and having a positive mind to learn new things.
+I would like to thank [Gregoire Vella](https://www.behance.net/gregoirevella) for the creative design that I have implemented.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -1,5 +1,5 @@
 .group-container {
-  font-family: sans-serif;
+  font-family: 'proxima', sans-serif;
   background-color: #ffff;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -50,10 +50,6 @@ a {
 
 .date {
   font-size: 0.7rem;
-}
-
-body {
-  background-color: #f5f5f5;
 }
 
 .new {
@@ -152,6 +148,7 @@ input[type="submit"] {
 }
 
 .form {
+  font-family: 'proxima', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;

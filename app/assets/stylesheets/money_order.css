@@ -25,6 +25,7 @@ body {
 }
 
 .transact-item {
+  font-family: 'proxima', sans-serif;
   color: #434b54;
   display: flex;
   flex-direction: column;
@@ -78,3 +79,4 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
 }
+

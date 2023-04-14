@@ -34,8 +34,9 @@
 
     <div class="field">
       <%= form.label :icon_data %>
-      <% if @group.icon.attached? %>
-        <%= image_tag @group.icon, class: "icon-image" %>
+      <%= form.file_field :icon_data %>
+      <% if @group.icon.present? && @group.icon.attached? %>
+        <%= image_tag @group.icon_attachment.variant(resize: "100x100"), class: "icon-image" %>
       <% else %>
         <%= image_tag "default_icon.png", class: "icon-image" %>
       <% end %>

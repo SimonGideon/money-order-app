@@ -6,7 +6,9 @@
   <div>
     <h3>LOGIN</h3>
   </div>
-  <div></div>
+  <div>
+    <%= link_to "Next", new_user_session_path, method: :get, class: "btn btn-primary" %>
+  </div>
 </div>
 <div class="container">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -18,22 +20,15 @@
                       placeholder: "Email" %>
       </div>
 
-      <div class="field">
+      <div class="field code">
         <%= f.password_field :password,
                          autocomplete: "current-password",
                          placeholder: "Password" %>
       </div>
-
-      <% if devise_mapping.rememberable? %>
-        <div class="rememberme">
-          <%= f.check_box :remember_me %>
-          <%= f.label :remember_me %>
-        </div>
-      <% end %>
     </div>
-    <div class="actions">
-      <%= f.submit "Log in" %>
-    </div>
+    <!-- Remove the Log in button -->
   <% end %>
+</div>
+<div class="links">
   <%= render "devise/shared/links" %>
 </div>

@@ -4,7 +4,7 @@ class Ability
   def initialize(user)
     user ||= User.new
 
-    can :read, Group
+    can :read, :landing_pages # allow all users to read landing pages
 
     return unless user.persisted?
 

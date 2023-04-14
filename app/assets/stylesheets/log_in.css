@@ -2,12 +2,18 @@ body {
   background-color: #f0ecec;
 }
 
+.hero {
+  display: flex;
+  justify-content: space-between;
+}
+
 .container {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   width: 100vw;
   background-color: #ffff;
-  box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .field {
@@ -17,32 +23,23 @@ body {
 }
 
 .filed-holder {
-  padding: 2rem;
+  padding: 1rem;
+  margin: 1rem;
 }
 
-.unlock_instr {
+.unlock_instr,
+.didnt-recieve,
+.sign_up {
   display: none;
 }
 
 input[type="email"],
-input[type="password"],
-input[type="submit"] {
-  margin-bottom: 20px;
+input[type="password"] {
   display: block;
-  width: 90%;
-  padding: 10px;
+  width: 100%;
+  padding: 7px;
   border: none;
   border-radius: 3px;
-}
-
-input[type="submit"] {
-  margin: auto;
-  width: 85%;
-  background-color: #5fb523;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  margin-bottom: 1rem;
 }
 
 a {
@@ -50,12 +47,23 @@ a {
   color: #969696;
 }
 
-.forgot-password,
-.didnt-recieve {
-  padding-left: 1.5rem;
-  font-size: small;
+.forgot-password {
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
-.didnt-recieve {
-  padding-bottom: 1rem;
+.btn {
+  display: flex;
+  justify-content: right;
+  color: #ffffff;
+}
+
+.code {
+  border-top: 1px solid #dbd8d8;
+  padding-top: 7px;
+  margin-top: 7px;
+}
+
+.links {
+  text-align: center;
 }

@@ -1,5 +1,5 @@
 class Group < ApplicationRecord
-  validates :name, length: { maximum: 50 }
+  validates :name, presence: true
   validates :description, length: { maximum: 500 }
   belongs_to :user
   has_many :money_orders

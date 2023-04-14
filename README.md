@@ -193,7 +193,7 @@ If you like this project feel free to star the projecta and request improve ment
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank me for beign focus and having a positive mind to learn new things.
+I would like to thank [Gregoire Vella](https://www.behance.net/gregoirevella) for the creative design that I have implemented.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

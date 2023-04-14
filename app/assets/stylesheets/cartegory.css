@@ -1,4 +1,5 @@
 .group-container {
+  font-family: sans-serif;
   background-color: #ffff;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;

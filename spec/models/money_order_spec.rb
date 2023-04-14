@@ -5,7 +5,7 @@ RSpec.describe MoneyOrder, type: :model do
     @group = Group.create(name: 'Baking Powder', description: 'Educative misabuse edit', user_id: @user.id)
     @order = MoneyOrder.create!(name: 'Eliah', author_id: @user.id, amount: 100, group_id: @group.id)
   end
-  
+
   describe 'validations' do
     it 'should match a name' do
       expect(@order.name).to eq('Eliah')
@@ -18,11 +18,11 @@ RSpec.describe MoneyOrder, type: :model do
     end
   end
   describe 'associations' do
-    it'should belong to group' do
+    it 'should belong to group' do
       expect(@order.group_id).to eq(@group.id)
     end
 
-    it'should belong to user' do
+    it 'should belong to user' do
       expect(@order.author_id).to eq(@user.id)
     end
   end

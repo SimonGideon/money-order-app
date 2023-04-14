@@ -7,13 +7,13 @@ RSpec.describe Group, type: :model do
   end
 
   describe 'validations' do
-    it "should have a valid name" do
+    it 'should have a valid name' do
       group = Group.new(name: '')
       expect(group).to_not be_valid
       expect(group.errors[:name]).to include("can't be blank")
     end
 
-    it "should have a valid description" do
+    it 'should have a valid description' do
       group = Group.new(description: '')
       expect(group).to_not be_valid
       group = Group.new(description: nil)
@@ -22,7 +22,7 @@ RSpec.describe Group, type: :model do
       expect(group).to_not be_valid
     end
 
-    it "should have a valid user" do
+    it 'should have a valid user' do
       group = Group.new(user_id: '')
       expect(group).to_not be_valid
       group = Group.new(user_id: nil)
@@ -40,4 +40,3 @@ RSpec.describe Group, type: :model do
     end
   end
 end
-     

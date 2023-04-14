@@ -5,7 +5,8 @@ RSpec.describe 'Groups page', type: :system do
 
   before(:each) do
     @user = User.create!(name: 'Eli', email: 'test@gmail.com', password: '123456')
-    @group = Group.create!(name: 'You need to sign in or sign up before continuing.', description: 'You need to sign in or sign up before continuing', user_id: @user.id)
+    @group = Group.create!(name: 'You need to sign in or sign up before continuing.',
+                           description: 'You need to sign in or sign up before continuing', user_id: @user.id)
     @user.skip_confirmation!
     @user.save!
     visit new_user_session_path

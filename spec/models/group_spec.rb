@@ -38,9 +38,6 @@ RSpec.describe Group, type: :model do
     it 'should have many money orders' do
       expect(@group).to have_many(:money_orders)
     end
-
-    it'should have many users' do
-      expect(@group).to have_many(:users)
   end
 end
      

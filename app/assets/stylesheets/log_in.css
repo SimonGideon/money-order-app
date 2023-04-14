@@ -67,3 +67,10 @@ a {
 .links {
   text-align: center;
 }
+
+.circle input {
+  background-color: transparent;
+  border: none;
+  color: #ffff;
+  font-size: 1rem;
+}

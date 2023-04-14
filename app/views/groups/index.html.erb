@@ -1,7 +1,7 @@
 <%= stylesheet_link_tag "cartegory" %>
 <div class="hero">
   <%= link_to root_path do %>
-    <%= image_tag "menu.svg", class: "nav-icon" %>
+    <%= image_tag "menu.png", class: "nav-icon" %>
   <% end %>
   <div class="trans-head">
     <h3>TRANSACTIONS</h3>
@@ -23,9 +23,10 @@
 <% @groups.each do |group| %>
   <%= link_to group_money_orders_path(group) do %>
     <div class="group-container">
-      <div class="row">
+      <% if group.icon_attachment.present? %>
         <%= image_tag group.icon_attachment, class: "icon" %>
-      </div>
+      <% end %>
+
       <div class="name-time">
         <span>
           <%= group.name %>

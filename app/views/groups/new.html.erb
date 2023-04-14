@@ -1,4 +1,4 @@
-<%= stylesheet_link_tag 'cartegory' %>
+<%= stylesheet_link_tag "cartegory" %>
 <div class="hero">
   <%= link_to groups_path do %>
     <%= image_tag "arrow.png", class: "nav-icon" %>
@@ -10,34 +10,40 @@
 </div>
 <div class="form">
   <%= form_with(model: @group, local: true) do |form| %>
-  <% if @group.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@group.errors.count, "error") %> prohibited this group from being saved:</h2>
+    <% if @group.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@group.errors.count, "error") %>
+          prohibited this group from being saved:</h2>
 
-      <ul>
-      <% @group.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+        <ul>
+          <% @group.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+    <div class="field">
+      <%= form.label :description %>
+      <%= form.text_area :description, required: true %>
+    </div>
+
+    <div class="field">
+      <%= form.label :icon_data %>
+      <% if @group.icon.attached? %>
+        <%= image_tag @group.icon, class: "icon-image" %>
+      <% else %>
+        <%= image_tag "default_icon.png", class: "icon-image" %>
       <% end %>
-      </ul>
+    </div>
+
+    <div class="actions">
+      <%= form.submit %>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
-<div class="field">
-  <%= form.label :description %>
-  <%= form.text_area :description, required: true %>
-</div>
-
-  <div class="field">
-    <%= form.file_field :icon_data %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
 
 </div>

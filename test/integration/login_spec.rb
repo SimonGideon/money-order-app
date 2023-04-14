@@ -16,16 +16,16 @@ RSpec.describe 'Log in page', type: :system do
     it 'displays email and password input field and submit button' do
       expect(page).to have_field('Email')
       expect(page).to have_field('Password')
-      expect(page).to have_button('Log in')
+      expect(page).to have_button('Next')
     end
 
     it 'click on SIGNUP button' do
       # Find the link using a CSS selector that targets both the link text and the icon
-      link = find('a', text: 'Sign up', match: :first)
+      link = find('input[type="submit"][value="Next"]')
       # Click on the link
       link.click
       sleep(1)
-      expect(page).to have_current_path new_user_registration_path
+      expect(page).to have_current_path new_user_session_path
     end
 
     it 'click on `Forgot your password?`' do

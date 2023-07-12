@@ -55,3 +55,24 @@
 .buttons a {
   text-decoration: none;
 }
+
+@media (min-width: 769px){
+  .landing-body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 50%;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  .buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .buttons > * {
+    width: 45%;
+  }
+}

@@ -56,7 +56,7 @@
   text-decoration: none;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
   body {
     background-color: #E5E4E2;
@@ -65,12 +65,13 @@
   .landing-container {
     border-radius: 10px;
     width: 30%;
-    height: 70vh;
+    height: 70%;
     background-color: #fff;
     padding: 1rem;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 1rem;
   }
 
   .comp-logo{

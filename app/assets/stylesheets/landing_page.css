@@ -73,6 +73,10 @@
     flex-direction: column;
   }
 
+  .comp-logo{
+    width: 40%;
+  }
+
   .logo {
     width: 100%;
   }
@@ -91,6 +95,10 @@
   .heading {
     height: 60%;
     font-size: 1rem;
+  }
+
+  .heading h1 {
+    display: none;
   }
 
   .buttons {

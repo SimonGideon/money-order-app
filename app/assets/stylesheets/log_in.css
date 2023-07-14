@@ -74,3 +74,8 @@ a {
   color: #ffff;
   font-size: 1rem;
 }
+
+/* desktop vversion */
+@media (min-width: 768px) {
+  
+}

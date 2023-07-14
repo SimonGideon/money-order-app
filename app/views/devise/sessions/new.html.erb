@@ -21,7 +21,7 @@
         <%= f.email_field :email,
                       autofocus: true,
                       autocomplete: "email",
-                      placeholder: "Email" %>
+                      placeholder: "johndoe@gmail.com" %>
       </div>
 
       <div class="field code">
@@ -29,6 +29,13 @@
         <%= f.password_field :password,
                          autocomplete: "current-password",
                          placeholder: "Password" %>
+      </div>
+      <div class="circle hide">
+        <input type="submit" value="Login" form="new_user">
+      </div>
+
+      <div class="links hide">
+        <%= render "devise/shared/links" %>
       </div>
     </div>
     <!-- Remove the Log in button -->

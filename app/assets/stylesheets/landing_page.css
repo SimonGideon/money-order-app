@@ -36,6 +36,7 @@
   flex-direction: column;
   width: 90%;
   gap: 1.3rem;
+  margin: 0 1rem;
 }
 
 .buttons>* {

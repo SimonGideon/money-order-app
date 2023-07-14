@@ -11,7 +11,7 @@
   </div>
 </div>
 <div class="container">
-  <div>
+  <div class="hide head">
     <span>Login</span>
   </div>
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -34,8 +34,11 @@
         <input type="submit" value="Login" form="new_user">
       </div>
 
-      <div class="links hide">
+      <div class="links hide d-footer">
         <%= render "devise/shared/links" %>
+        <%= link_to landing_pages_path do %>
+          <span class="back">Sign Up</span>
+        <% end %>
       </div>
     </div>
     <!-- Remove the Log in button -->

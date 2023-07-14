@@ -1,5 +1,6 @@
 body {
   background-color: #f0ecec;
+  font-family: "Roboto", sans-serif;
 }
 
 .hero {
@@ -152,4 +153,25 @@ a {
     width: 100%;
     margin-top: 1.5rem;
   }
+
+  .head {
+    position: relative;
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .d-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .back {
+    color: #3778c2;
+  }
+  
 }

@@ -3,6 +3,14 @@
   src: url('majesty.ttf');
 }
 
+.comp-logo{
+  width: 40%;
+}
+
+.logo {
+  display: none;
+}
+
 .landing-body {
   display: flex;
   justify-content: center;
@@ -79,6 +87,7 @@
   }
 
   .logo {
+    display: block;
     width: 100%;
   }
 

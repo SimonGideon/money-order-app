@@ -75,7 +75,15 @@ a {
   font-size: 1rem;
 }
 
+.log-in-side {
+  display: none;
+}
+
 /* desktop vversion */
 @media (min-width: 768px) {
-  
+
+  .log-in-side {
+    display: block;
+  }
+
 }

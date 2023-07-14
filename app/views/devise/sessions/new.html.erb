@@ -11,10 +11,13 @@
   </div>
 </div>
 <div class="container">
-  <%= image_tag "log-in.jpg", class: "log-in-side" %>
+  <div>
+    <span>Login</span>
+  </div>
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="filed-holder">
       <div class="field">
+        <span>Email</span>
         <%= f.email_field :email,
                       autofocus: true,
                       autocomplete: "email",
@@ -22,6 +25,7 @@
       </div>
 
       <div class="field code">
+        <span>Password</span>
         <%= f.password_field :password,
                          autocomplete: "current-password",
                          placeholder: "Password" %>

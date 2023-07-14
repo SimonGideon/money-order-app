@@ -11,7 +11,7 @@ body {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   background-color: #ffff;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0, rgba(27, 31, 35, 0.15) 0 0 0 1px;
 }
@@ -19,7 +19,6 @@ body {
 .field {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .filed-holder {
@@ -81,9 +80,43 @@ a {
 
 /* desktop vversion */
 @media (min-width: 768px) {
-
-  .log-in-side {
-    display: block;
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    background-color: #ffffff;
+    box-shadow: none;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 20vh;
   }
 
+  .new_user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .hero {
+    display: none;
+  }
+
+  form {
+    padding: 0;
+    margin: 0.5rem;
+  }
+
+  .filed-holder {
+    width: 85%;
+  }
+
+  .field {
+    border-bottom: 1px solid #dbd8d8;
+  }
+
+  .code {
+    border-top: none;
+  }
 }

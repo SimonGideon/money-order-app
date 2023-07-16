@@ -50,9 +50,8 @@ body {
 
 /* notofication */
 .notice {
-  /* display: none; */
   position: absolute;
-  top: 0;
+  top: 1;
   right: 0;
   width: max-content;
   border-radius: 6px;
@@ -85,7 +84,7 @@ body {
   height: 3px;
   transform: scaleX(0);
   transform-origin: left;
-  background: linear-gradient(to right, #3cbb0a, #aaec8a);
+  background: linear-gradient(to right, #bb160a, #aaec8a);
   border-radius: inherit;
   animation: progress 2, 5s 0.3s linear;
 }

@@ -61,7 +61,6 @@ body {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
   transform: translateY(30px);
   opacity: 0;
-  visibility: hidden;
   animation: fade-in 3s linear;
 }
 
@@ -133,5 +132,9 @@ body {
 }
 
 .hidden {
+  display: none;
+}
+
+.notice.empty {
   display: none;
 }

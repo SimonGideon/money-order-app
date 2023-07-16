@@ -18,16 +18,21 @@
   </head>
 
   <body>
-    <div class="notice">
-      <div class="notification-body">
-        <%= image_tag "circle-checked.png", class: "notication_icon" %>
-        <span class="cont">
-          <%= notice %>
-          &#128640;
-        </span>
+    <% if notice.present? %>
+      <div class="notice">
+        <div class="notification-body">
+          <%= image_tag "circle-checked.png", class: "notication_icon" %>
+          <span class="cont">
+            <%= notice %>
+            &#128640;
+          </span>
+        </div>
+        <div class="notification-progress"></div>
       </div>
-      <div class="notification-progress"></div>
-    </div>
+    <% else %>
+      <div class="notice empty"></div>
+    <% end %>
+
     <div class="alert"><%= alert %></div>
     <%= yield %>
   </body>

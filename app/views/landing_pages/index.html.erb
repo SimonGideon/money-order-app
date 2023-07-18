@@ -1,11 +1,15 @@
-<%= stylesheet_link_tag 'landing_page' %>
-  <div class="landing-body">
+<%= stylesheet_link_tag "landing_page" %>
+<div class="landing-body">
+  <div class="loga">
+    <%= image_tag "landing-vector.png", class: "logo" %>
+  </div>
+  <div class="landing-container">
     <div class="heading">
-      <h1>Money Order</h1>
+      <%= image_tag "comp-logo.png", class: "comp-logo" %>
     </div>
     <div class="buttons">
-      <%= link_to 'LOG IN', new_user_session_path, class: "log-in" %>
-      <%= link_to 'SIGN UP', new_user_registration_path, class: "sign-up" %>
+      <%= link_to "LOG IN", new_user_session_path, class: "log-in" %>
+      <%= link_to "SIGN UP", new_user_registration_path, class: "sign-up" %>
     </div>
   </div>
-
+</div>

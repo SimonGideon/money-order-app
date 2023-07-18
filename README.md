@@ -78,7 +78,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 1. ### [Demo Video](https://youtu.be/001trgndMac)
-2. ### [Live](https://money-order-app.onrender.com)
 <!-- LIVE 
 > Add a link to your deployed project.
 

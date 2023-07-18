@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
+ <img src="https://github.com/SimonGideon/money-order-app/assets/61404403/2cf28045-3ca6-4e92-b85f-cee42520fb17" alt="logo" width="140"  height="auto" />
   <h2><b>MONEY ORDER APP</b></h2>
 
 

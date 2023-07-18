@@ -177,3 +177,14 @@ i.fas.fa-sign-out-alt {
   font-size: 1.5rem;
   color: #333; /* Change this to the desired color */
 }
+
+.circle button {
+  background-color: #ffffff00;
+  border: none;
+  width: 100%;
+}
+
+.circle img {
+  width: 2em;
+  height: 2em;
+}

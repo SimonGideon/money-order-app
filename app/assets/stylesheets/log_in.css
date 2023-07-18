@@ -2,6 +2,7 @@ body {
   background-color: #f0ecec;
   font-family: "Roboto", sans-serif;
 }
+/* stylelint-disable csstree/validator */
 
 .hero {
   display: flex;
@@ -86,11 +87,10 @@ a {
 /* desktop vversion */
 @media (min-width: 768px) {
   .container {
-    top: 50%;
     display: flex;
     justify-content: center;
     width: 30%;
-    background-color: #ffffff;
+    background-color: #fff;
     box-shadow: none;
     padding: 1rem;
     margin: auto;
@@ -177,7 +177,7 @@ a {
   .back {
     color: #3778c2;
   }
-  
+
   /* alerts */
   .alert {
     width: 29%;
@@ -201,11 +201,12 @@ a {
     padding: 0;
   }
 
-/* entrace animations */
+  /* entrace animations */
   @keyframes slide-in {
     0% {
       top: -100px;
     }
+
     100% {
       top: 1vh;
     }

@@ -82,43 +82,44 @@ input[type="submit"] {
 
 /* desktop */
 @media (min-width: 768px) {
-.hero {
-  height: 2rem;
-}
+  .hero {
+    height: 2rem;
+  }
 
-.nav-icon {
-  width: 10%;
-}
+  .nav-icon {
+    width: 10%;
+  }
 
-.container {
-  margin: auto;
-  width: 60%;
-  margin-top: 2rem;
-  padding: 2rem;
-}
+  .container {
+    margin: auto;
+    width: 60%;
+    margin-top: 2rem;
+    padding: 2rem;
+  }
 
-.trans-head {
-  text-align: center;
-}
+  .trans-head {
+    text-align: center;
+  }
 
-.name-ico img {
-  width: 6rem;
-  height: 6rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
-}
+  .name-ico img {
+    width: 6rem;
+    height: 6rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
 
-.description {
-  font-size: 1.5rem;
-}
+  .description {
+    font-size: 1.5rem;
+  }
 
-.transaction-id, .time {
-  font-size: 0.8rem;
-}
+  .transaction-id,
+  .time {
+    font-size: 0.8rem;
+  }
 
-.formItems {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-}
+  .formItems {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
 }

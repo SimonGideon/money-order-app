@@ -54,6 +54,10 @@ a {
   font-size: 1rem;
 }
 
+.r-btn {
+  display: none;
+}
+
 /* desktop version */
 @media (min-width: 768px) {
   .sign-up-cont {

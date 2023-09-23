@@ -83,5 +83,3 @@ production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
   database: money_order_app_production
-  username: money_order_app
-  password: <%= ENV['MONEY_ORDER_APP_DATABASE_PASSWORD'] %>

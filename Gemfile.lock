@@ -275,11 +275,14 @@ GEM
     rubocop-ast (1.28.0)
       parser (>= 3.2.1.0)
     ruby-progressbar (1.13.0)
+    ruby_http_client (3.5.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.8.6)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sendgrid-ruby (6.6.2)
+      ruby_http_client (~> 3.4)
     shellany (0.0.1)
     shoulda-matchers (5.3.0)
       activesupport (>= 5.2.0)
@@ -346,6 +349,7 @@ DEPENDENCIES
   rspec-rails
   rubocop (>= 1.0, < 2.0)
   selenium-webdriver
+  sendgrid-ruby
   shoulda-matchers (~> 5.0)
   sprockets-rails
   stimulus-rails

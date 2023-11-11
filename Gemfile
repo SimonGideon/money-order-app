@@ -62,8 +62,11 @@ gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 
 gem "sendgrid-ruby"
 
+
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
+
+gem 'mailgun-ruby', '~>1.2.11'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -85,11 +88,7 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
-  # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
-  # gem "rack-mini-profiler"
-
-  # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  # gem "spring"
+  gem "dotenv-rails"
 end
 
 group :test do
@@ -97,4 +96,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem "dotenv-rails"
 end

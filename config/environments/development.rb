@@ -68,8 +68,17 @@ Rails.application.configure do
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
   config.action_mailer.default_url_options = { host: "localhost", port: 3000 }
-  config.action_mailer.delivery_method = :letter_opener
+  # config.action_mailer.delivery_method = :letter_opener
   config.action_mailer.perform_deliveries = true
+config.action_mailer.raise_delivery_errors = true
+# config.action_mailer.default_url_options = { host: ENV['MAIL_HOST'] }
+config.action_mailer.delivery_method = :mailgun
+config.action_mailer.mailgun_settings = {
+  api_key: ENV['MAIL_GUN_KEY'],
+  domain: ENV['MAIL_GUN_DOMAIN'],
+}
+
+
   # add rack::LiveReload to the bottom of the middleware stack with the default options:
   config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload
 end

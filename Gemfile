@@ -60,11 +60,13 @@ gem "letter_opener", "~> 1.4", ">= 1.4.1"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 
+gem "sendgrid-ruby"
+
+
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
 gem 'mailgun-ruby', '~>1.2.11'
-
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -85,13 +87,8 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+
   gem "dotenv-rails"
-
-  # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
-  # gem "rack-mini-profiler"
-
-  # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  # gem "spring"
 end
 
 group :test do

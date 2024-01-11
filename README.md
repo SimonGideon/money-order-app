@@ -7,7 +7,6 @@
 
 </div>
 
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -35,7 +34,7 @@
 
 # 📖 MY RECIPE APP <a name="about-project"></a>
 
-> The Online Attendance System with QR Code Integration is designed to streamline the process of marking attendance for learners in educational settings. This system leverages QR codes to provide a quick and efficient method for both lecturers and learners to manage attendance records.
+> This is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -61,6 +60,8 @@
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
+
+<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 

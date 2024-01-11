@@ -35,7 +35,7 @@
 
 # 📖 MY RECIPE APP <a name="about-project"></a>
 
-> This is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+> The Online Attendance System with QR Code Integration is designed to streamline the process of marking attendance for learners in educational settings. This system leverages QR codes to provide a quick and efficient method for both lecturers and learners to manage attendance records.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -69,13 +69,11 @@
 > The project has the following features.
 
 - **Login page and registration page**
-- **List the user transaction cartegoty**
-- **Allow user to create a new transaction**
+- **QR code to mark attendance**
+- **Lesson sessions for lecturer**
+- **Admin Privilege to create courses and manage lecturers**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 1. ### [Demo Video](https://youtu.be/001trgndMac)
@@ -139,9 +137,6 @@ To run the project, execute the following command:
 
 To run tests, run the following command:
 
-```sh
-  bin/rails test test/models/article_test.rb
-```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

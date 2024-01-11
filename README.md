@@ -62,18 +62,18 @@
   </ul>
 </details>
 
-<!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
 > The project has the following features.
 
 - **Login page and registration page**
-- **QR code to mark attendance**
-- **Lesson sessions for lecturer**
-- **Admin Privilege to create courses and manage lecturers**
+- **List the user transaction cartegoty**
+- **Allow user to create a new transaction**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 1. ### [Demo Video](https://youtu.be/001trgndMac)
@@ -137,6 +137,9 @@ To run the project, execute the following command:
 
 To run tests, run the following command:
 
+```sh
+  bin/rails test test/models/article_test.rb
+```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

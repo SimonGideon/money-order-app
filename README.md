@@ -163,9 +163,6 @@ To run tests, run the following command:
 
 > The following will be implemented on future updates.
 
--  **Generate statement for transaction**
--  **Follow users**
-- **Enable users to add their credit card**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

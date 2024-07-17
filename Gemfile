@@ -62,11 +62,10 @@ gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 
 gem "sendgrid-ruby"
 
-
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
-gem 'mailgun-ruby', '~>1.2.11'
+gem "mailgun-ruby", "~>1.2.11"
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -96,5 +95,4 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
-  gem "dotenv-rails"
 end

@@ -1,7 +1,8 @@
 <a name="readme-top"></a>
 
 <div align="center">
- <img src="https://user-images.githubusercontent.com/61404403/230994307-e2316a81-e188-4753-9176-37f8c73dae39.png" alt="logo" width="140"  height="auto" />
+ <img src="https://github.com/SimonGideon/money-order-app/assets/61404403/2cf28045-3ca6-4e92-b85f-cee42520fb17" alt="logo" width="140"  height="auto" />
+
   <h2><b>MONEY ORDER APP</b></h2>
 
 
@@ -74,21 +75,24 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO
+
+
+
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
+1. ### [Demo Video](https://youtu.be/lksE5t67fR8)
+<!-- LIVE 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+
+-[Live view](https://money-order-app.onrender.com)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -163,6 +167,7 @@ To run tests, run the following command:
 
 > The following will be implemented on future updates.
 
+
 -  **Generate statement for transaction**
 -  **Follow users**
 - **Enable users to add their credit card**
@@ -191,7 +196,9 @@ If you like this project feel free to star the projecta and request improve ment
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank me for beign focus and having a positive mind to learn new things.
+
+I would like to thank [Gregoire Vella](https://www.behance.net/gregoirevella) for the creative design that I have implemented.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

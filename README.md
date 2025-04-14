@@ -2,6 +2,7 @@
 
 <div align="center">
  <img src="https://github.com/SimonGideon/money-order-app/assets/61404403/2cf28045-3ca6-4e92-b85f-cee42520fb17" alt="logo" width="140"  height="auto" />
+
   <h2><b>MONEY ORDER APP</b></h2>
 
 
@@ -40,6 +41,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 > This project was built with the following technologies
+
 <details>
   <summary>Client</summary>
   <ul>
@@ -76,13 +78,15 @@
 
 
 
+
 ## 🚀 Live Demo <a name="live-demo"></a>
 1. ### [Demo Video](https://youtu.be/lksE5t67fR8)
 <!-- LIVE 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+
 -[Live view](https://money-order-app.onrender.com)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
@@ -164,6 +168,10 @@ To run tests, run the following command:
 > The following will be implemented on future updates.
 
 
+-  **Generate statement for transaction**
+-  **Follow users**
+- **Enable users to add their credit card**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
@@ -188,7 +196,9 @@ If you like this project feel free to star the projecta and request improve ment
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+
 I would like to thank [Gregoire Vella](https://www.behance.net/gregoirevella) for the creative design that I have implemented.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
